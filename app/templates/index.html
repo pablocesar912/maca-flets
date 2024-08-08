@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index-style.css') }}">
+    <link rel="stylesheet" href="../static/css/index-style.css">
+     <!-- <link rel="stylesheet" href="../static/css/index.css"> -->
+    <title>Inicio</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <h1 style="text-align: center;">Bienvenido a la Plataforma de Fletes</h1>
+        </div>
+        
+        <div class="card1">
+            <a href="{{ url_for('register_user') }}">Registrar nuevo Usuario</a>
+        </div>
+
+        <div class="card2">
+            <a href="{{ url_for('users') }}">Ver Usuarios Registrados</a>
+        </div>
+
+        <div class="card3">
+            <a href="{{ url_for('vehicles') }}">Ver Vehículos Registrados</a>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

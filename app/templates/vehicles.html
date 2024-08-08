@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/users-style.css') }}">
+    <title>Vehículos Registrados</title>
+</head>
+<body>
+    <h1>Vehículos Registrados</h1><hr>
+    <div>
+        {{ vehicles_table | safe }}
+    </div><hr>
+    <a href="{{ url_for('index') }}">Volver al Inicio</a>
+</body>
+</html>

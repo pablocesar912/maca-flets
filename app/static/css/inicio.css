@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #0072ff, #00c6ff); /* Degradado azul y verde */
+    background-image: url("https://i.pinimg.com/564x/b4/22/4e/b4224e14b75f8c803b2c473b01914a32.jpg"); /* Ruta de la imagen de fondo */
+    background-size: cover;
+    background-blend-mode: overlay;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 3em;
+    color: #333;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #fff;
+    margin-top: 10px;
+}
+
+a {
+    display: inline-block;
+    margin: 20px;
+    padding: 15px 25px;
+    font-size: 1.2em;
+    color: #0072ff;
+    background: #fff;
+    border: 2px solid #0072ff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    background: #0072ff;
+    color: #fff;
+    border-color: #fff;
+}
+
+hr {
+    width: 80%;
+    border: 1px solid #fff;
+}

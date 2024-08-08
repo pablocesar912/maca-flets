@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/users-style.css') }}">
+    <title>Usuarios Registrados</title>
+</head>
+<body>
+    <h1>Usuarios Registrados</h1><hr>
+
+    <!-- Tabla para mostrar los usuarios registrados -->
+    <div>
+        {{ users_table|safe }}  <!-- plantilla del motor Jinja2 / carga los registros desde el dataframe-->
+    </div>
+    <hr>
+    <a href="{{ url_for('index') }}">Volver al Inicio</a>
+</body>
+</html>
